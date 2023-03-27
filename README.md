@@ -14,8 +14,28 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-|Yoojinlee's github 👋 | https://blog.naver.com/agleejean |
+<h2>Countdown to my birthday</h2>
+<div id="countdown"></div>
 
+<script>
+  var countDownDate = new Date("2023-04-01T00:00:00").getTime();
+
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("countdown").innerHTML = "D-" + days;
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "D-day!";
+    }
+  }, 1000);
+</script>
+
+|Yoojinlee's github 👋 | https://blog.naver.com/agleejean |
 |--|--------|
 |⚡My stats|[![Yoojin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoojinlee-hub)](https://github.com/yoojinlee-hub/github-readme-stats)|
 |🏆award-winning work(worked with others)🏆|<a href="https://github.com/yoojinlee-hub/NPC_Project"><img src="https://img.shields.io/badge/NPC_project(Game/RPGmaker)-7878FF?style=flat-square&logo=GitHub&logoColor=white"/></a> <a href="https://github.com/yoojinlee-hub/DALC_3_3"><img src="https://img.shields.io/badge/DALC_project(Web with AI)-28288C?style=flat-square&logo=GitHub&logoColor=white"/></a>|
